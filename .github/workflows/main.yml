@@ -19,4 +19,4 @@ jobs:
           server: a2f72.netcup.net
           username: ${{ secrets.ftp_radarista }}
           password: ${{ secrets.ftp_radarista_pw }}
-          local-dir: ./
+          local-dir: './'
