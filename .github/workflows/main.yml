@@ -20,4 +20,4 @@ jobs:
           username: ${{ secrets.ftp_radarista }}
           password: ${{ secrets.ftp_radarista_pw }}
           server-dir: /radarista.de/httpdocs/
-          local-dir: ./radarista/
+          local-dir: ./chrudat/radarista/
