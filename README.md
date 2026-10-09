@@ -1,1 +1,1 @@
-![](./crlogo_small.jpeg)
+![](./crlogo_small.jpg)
