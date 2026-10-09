@@ -1,106 +1,107 @@
-<!doctype html>
+```html
+<!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Christian Radarista · Party · Club · Corporate Events</title>
+  <meta name="theme-color" content="#ffffff">
+
+  <title>Christian Radarista | Party · Club · Corporate Eevents</title>
+  <meta name="description"
+        content="Christian Radarista – DJ für Party, Club und Corporate Events.">
+
   <style>
-    :root{
-      --bg: #ffffff;
-      --fg: #000000;
-      --max-width: 720px;
+    * {
+      box-sizing: border-box;
     }
 
-    /* Grundlegendes Reset */
-    *{box-sizing:border-box;margin:0;padding:0}
-    html,body{height:100%}
-
-    body{
-      background:var(--bg);
-      color:var(--fg);
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      display:grid;
-      place-items:center; /* zentriert horizontal + vertikal */
-      padding:2rem;
+    body {
+      margin: 0;
+      padding: 24px 16px;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f4f4f4;
+      color: #171717;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
-    .card{
-      width:100%;
-      max-width:var(--max-width);
-      text-align:center;
-      padding:2.25rem 1.5rem;
-      border-radius:12px;
-      /* kein sichtbarer Rahmen, reine weiße Fläche mit schwarzer Schrift */
+    .card {
+      width: 100%;
+      max-width: 420px;
+      padding: 40px 24px;
+      text-align: center;
+      background: #fff;
+      border: 1px solid #e5e5e5;
+      border-radius: 18px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
     }
 
-    /* Logo: oben, skalierbar */
-    .logo{
-      width:clamp(64px, 18vw, 120px);
-      height:auto;
-      margin:0 auto 1.25rem auto;
-      display:block;
+    .music {
+      font-size: 42px;
+      margin-bottom: 22px;
     }
 
-    h1{
-      font-size:clamp(1.25rem, 3.5vw, 2rem);
-      margin-bottom:0.5rem;
-      font-weight:600;
-      line-height:1.1;
+    h1 {
+      margin: 0;
+      font-size: clamp(27px, 7vw, 36px);
+      line-height: 1.15;
+      letter-spacing: -1px;
     }
 
-    .contact{
-      margin-top:0.75rem;
-      font-size:clamp(0.95rem, 2.6vw, 1.1rem);
-      line-height:1.6;
+    .subtitle {
+      margin: 20px 0 30px;
+      font-size: 15px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      line-height: 1.8;
     }
 
-    a{
-      color:var(--fg);
-      text-decoration:none;
-      border-bottom:1px dashed rgba(0,0,0,0.08);
-      padding-bottom:2px;
+    .contact {
+      display: block;
+      padding: 14px 16px;
+      border: 1px solid #222;
+      border-radius: 9px;
+      color: #171717;
+      text-decoration: none;
+      font-size: 16px;
+      overflow-wrap: anywhere;
+      transition: background 0.2s, color 0.2s;
     }
 
-    /* Größere Klickflächen für mobile Geräte */
-    .contact a{
-      display:inline-block;
-      padding:0.45rem 0.6rem;
-      border-radius:8px;
-      margin-top:0.35rem;
+    .contact:hover {
+      background: #171717;
+      color: #fff;
     }
 
-    /* Kleiner Hinweis am Fuß */
-    .note{
-      margin-top:1.25rem;
-      font-size:1.0rem; 
-	  font-weight:600;	  
-    }
-
-    /* Hochformat-Smartphone: weniger padding */
-    @media (max-width:420px){
-      .card{padding:1.5rem}
+    .footer {
+      margin-top: 28px;
+      font-size: 12px;
+      color: #777;
     }
   </style>
 </head>
+
 <body>
-  <main class="card" role="main" aria-label="Digitale Visitenkarte">
+  <main class="card">
+    <div class="music" aria-hidden="true">🎧</div>
 
-   <img src="crlogo_small.jpeg">
+    <h1>CHRISTIAN<br>RADARISTA</h1>
 
-    <!-- Name: ersetze durch deinen Namen -->
-    <h1>Christian Radarista</h1>
-	
-	 <div class="note">Party · Club · Corporate Events</div>
-
-    <!-- Kontaktinformationen -->
-    <div class="contact">
-      <div>
-        &#9993; <a href="mailto:kontakt@radarista.de" aria-label="send email">info@radarista.de</a>
-      </div>
+    <div class="subtitle">
+      PARTY · CLUB · CORPORATE EVENTS
     </div>
-    
+
+    <a class="contact"
+       href="mailto:info@radarista.de">
+      ✉ send e-mail
+    </a>
+
+    <div class="footer">
+      Music. Energy. Moments.
+    </div>
   </main>
 </body>
 </html>
+```
