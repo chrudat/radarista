@@ -18,5 +18,5 @@ jobs:
         with:
           server: a2f72.netcup.net
           username: ${{ secrets.ftp_radarista }}
-          password: ${{ secrets.ftp_radarista_pw }}
+          password: ${{ secrets.ftp_radarista_pwd }}
           
