@@ -1,1 +1,1 @@
-<img src="djsetup.jpg" width="250">
+<img src="djspeaker.jpg" width="250">
