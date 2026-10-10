@@ -1,1 +1,1 @@
-![](./crlogo_small.jpg)
+<img src="djsetup.jpg" width="250">
